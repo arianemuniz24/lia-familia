@@ -3,11 +3,11 @@ A calm multilingual voice agenda. **Product lead: Ariane Figueiredo — FIGUEIRA
 
 Demo: https://lia-familia-figueira.netlify.app/
 
-Download and extract **Lia-Source-R06.zip** before running the project. The source folders are packaged in the archive.
+Download and extract **Lia-Source-R07.zip** before running the project. The source folders are packaged in the archive.
 
 ## What works
 - Six UI/conversation languages: Portuguese, English, Spanish, Italian, French and German.
-- AssemblyAI voice conversation integration; task proposals require exact source quotes. Voice-to-task reliability is still under validation: the last live integration test produced transcription/audio but no task proposal.
+- AssemblyAI voice conversation integration; task proposals require exact source quotes. A live synthetic Portuguese test produced a source-validated draft for tomorrow at 12:00. This is not physical-microphone acceptance or proof across every language.
 - Tasks are never saved by the agent: review title/date/time and explicitly save.
 - Today (including overdue), Tomorrow, Coming days, Completed; edit/complete/reopen.
 - Morning overview, evening review, move unfinished tasks to tomorrow.
@@ -33,7 +33,10 @@ Approved R04 logo: elongated olive wordmark, sound symbol in the i dot, uppercas
 Responsive layout tested at 320, 390 and 1440 CSS pixels; touch controls at least 48px tall. Search, reversible task removal, preferences persistence and daily local date rollover without redeploy. Day clock refreshes at local midnight and after tab focus/resume. No offline/PWA installation claim.
 
 ## Validation
-11 automated tests pass, including local date rollover, sleep catch-up, task validation, calendar export and six-language dictionary parity. Browser create/remove/undo/reload/search verified. No claim of fully accepted voice task creation; further live voice testing is required before final competition submission.
+13 automated tests pass, including local date rollover, sleep catch-up, task validation, calendar export and six-language dictionary parity. Browser create/remove/undo/reload/search verified. Live synthetic speech extraction passed; physical-microphone testing and subjective audio acceptance remain pending.
 
 ## License
 MIT for project source. Original logo generated for this project.
+
+## R07 delivery
+Voice tool arguments now contain only title and exact quote. The browser resolves supported explicit date/time expressions; unknown or ambiguous dates remain blank for human review. Presentation materials label synthetic narration, actual API audio and manual UI screenshots.
