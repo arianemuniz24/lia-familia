@@ -3,7 +3,7 @@ A calm multilingual voice agenda. **Product lead: Ariane Figueiredo — FIGUEIRA
 
 Demo: https://lia-familia-figueira.netlify.app/
 
-Download and extract **Lia-Source-R07.zip** before running the project. The source folders are packaged in the archive.
+Download and extract **Lia-Source-R08.zip** before running the project. The source folders are packaged in the archive.
 
 ## What works
 - Six UI/conversation languages: Portuguese, English, Spanish, Italian, French and German.
@@ -24,7 +24,7 @@ python3 -m http.server 8805 --directory public
 Text agenda works on a static server. Voice requires Netlify functions. Set server-only `ASSEMBLYAI_API_KEY` and `LIA_ACCESS_CODE`; never publish `.env`. Deploy `public/` and `netlify/functions/` using `netlify.toml`.
 
 ## Honest limits
-Prototype for testing with example data. Not yet submitted to a hackathon. Tasks remain in this browser, with no account sync. No background push notifications: calendar reminders must be configured in the user's calendar after import. No automatic morning/night notification. The three-minute voice session sends speech, current pending tasks and ingredients to AssemblyAI only after consent. Conversation transcripts remain in tab memory. Browser data is not encrypted by this app. No real sensitive family information in demos. Food ideas require the user to check allergies and restrictions.
+Prototype for testing with example data. Tasks remain in this browser, with no account sync. No background push notifications: calendar reminders must be configured in the user's calendar after import. No automatic morning/night notification. The three-minute voice session sends speech, current pending tasks and ingredients to AssemblyAI only after consent. Conversation transcripts remain in tab memory. Browser data is not encrypted by this app. No real sensitive family information in demos. Food ideas require the user to check allergies and restrictions.
 
 AI task/date extraction can be wrong; the visible draft and Save step are deliberate safeguards. A blank date must be selected before saving. Six locales have dictionary-parity tests, but voice recognition has not been accepted in all six languages. Native Brazilian Portuguese voice availability depends on the provider.
 
@@ -40,3 +40,6 @@ MIT for project source. Original logo generated for this project.
 
 ## R07 delivery
 Voice tool arguments now contain only title and exact quote. The browser resolves supported explicit date/time expressions; unknown or ambiguous dates remain blank for human review. Presentation materials label synthetic narration, actual API audio and manual UI screenshots.
+
+## R08 — Voice-first entry
+The opening screen explicitly introduces Lia as a voice assistant and offers a large microphone button. Voice setup opens in a dialog; the mobile shortcut starts the same flow. Manual entry is secondary. Complete voice drafts display their date/time with a direct explicit Save button, while incomplete drafts still require correction. The six interface languages include the new onboarding copy.
